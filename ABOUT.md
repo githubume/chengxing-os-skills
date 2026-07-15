@@ -49,8 +49,8 @@
 - **成行 OS Skills**：三个公开、可安装、可验证的 AI 行为工作流；
 - **专业服务**：复杂系统梳理、机构定制、工作坊和本地部署。
 
-官方网站：[a-do.top](https://a-do.top)  
-联系与合作：[a-do.top/join](https://a-do.top/join)
+- 官方网站：[a-do.top](https://a-do.top)
+- 联系与合作：[a-do.top/join](https://a-do.top/join)
 
 ## 边界
 
