@@ -1,0 +1,4 @@
+interface:
+  display_name: "亲子案例导出"
+  short_description: "将家庭学习评估整理为先预览再保存的儿童去标识化案例"
+  default_prompt: "使用 $case-export 导出给老师的最小化匿名案例，保存前先预览。"

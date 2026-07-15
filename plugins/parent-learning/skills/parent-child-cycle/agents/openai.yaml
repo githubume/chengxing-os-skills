@@ -1,0 +1,4 @@
+interface:
+  display_name: "亲子学习循环"
+  short_description: "还原家长提醒与孩子回应如何相互强化并设计双主体改变"
+  default_prompt: "使用 $parent-child-cycle 分析我们一催作业就争吵的循环。"

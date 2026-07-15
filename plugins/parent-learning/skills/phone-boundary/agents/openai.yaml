@@ -1,0 +1,4 @@
+interface:
+  display_name: "家庭手机边界"
+  short_description: "共同设计透明、可执行且不过度惩罚的家庭手机使用边界"
+  default_prompt: "使用 $phone-boundary 帮我们制定不靠突然没收的手机规则。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "冲突后修复对话"
+  short_description: "在安全且双方自愿时承担责任、表达影响并提出具体请求"
+  default_prompt: "使用 $repair-conversation 帮我在冷静后重新谈这件事。"

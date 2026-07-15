@@ -1,0 +1,29 @@
+{
+  "name": "chengxing-os-skills",
+  "metadata": {
+    "description": "成行 OS 成长行为学插件：习惯重建、亲子学习行为与情绪冲突复位。"
+  },
+  "owner": {
+    "name": "成行 OS"
+  },
+  "plugins": [
+    {
+      "name": "habit-rebuild",
+      "source": "./plugins/habit-rebuild",
+      "description": "把拖延、手机、晚睡和习惯复发转成可观察、可恢复的七天行为实验。",
+      "author": {"name": "成行 OS"}
+    },
+    {
+      "name": "parent-learning",
+      "source": "./plugins/parent-learning",
+      "description": "分析作业启动、家长催促、手机边界和亲子学习循环，让孩子、家长与环境共同改变。",
+      "author": {"name": "成行 OS"}
+    },
+    {
+      "name": "conflict-reset",
+      "source": "./plugins/conflict-reset",
+      "description": "分析日常冲突、边界和反刍循环，生成安全暂停、修复与复位实验。",
+      "author": {"name": "成行 OS"}
+    }
+  ]
+}

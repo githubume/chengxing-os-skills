@@ -1,0 +1,4 @@
+interface:
+  display_name: "家庭学习画像访谈"
+  short_description: "通过快速或完整访谈建立经确认保存的最小化家庭学习画像"
+  default_prompt: "使用 $cold-start-interview 了解我们家的学习情况，保存前先预览。"

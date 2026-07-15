@@ -1,0 +1,4 @@
+interface:
+  display_name: "习惯案例导出"
+  short_description: "安全将行为评估和跟踪整理为先预览再保存的去标识化案例"
+  default_prompt: "使用 $case-export 导出匿名案例，保存前先显示完整预览。"

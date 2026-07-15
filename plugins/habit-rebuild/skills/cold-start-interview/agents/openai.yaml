@@ -1,0 +1,4 @@
+interface:
+  display_name: "习惯画像访谈"
+  short_description: "通过快速或完整访谈建立经用户确认后保存的本地习惯画像"
+  default_prompt: "使用 $cold-start-interview 快速了解我的习惯，保存前先给我预览。"

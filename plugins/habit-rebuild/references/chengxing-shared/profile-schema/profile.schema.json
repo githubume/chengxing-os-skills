@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chengxing-os:schema:profile:v1",
+  "title": "Chengxing OS local profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_version",
+    "plugin",
+    "subject_role",
+    "age_band",
+    "preferences",
+    "data_consent",
+    "domain",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "profile_version": {"const": "1.0"},
+    "plugin": {"enum": ["habit-rebuild", "parent-learning", "conflict-reset"]},
+    "subject_role": {"enum": ["adult", "parent", "caregiver", "other"]},
+    "age_band": {"type": ["string", "null"], "enum": [null, "under-14", "14-17", "18-24", "25-39", "40-59", "60-plus"]},
+    "time_budget_minutes": {"type": ["integer", "null"], "minimum": 0, "maximum": 1440},
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["response_style", "check_in_days"],
+      "properties": {
+        "response_style": {"enum": ["brief", "structured", "gentle", "direct", "unspecified"]},
+        "check_in_days": {"type": "array", "maxItems": 4, "items": {"type": "integer", "enum": [3, 7, 14, 30]}, "uniqueItems": true}
+      }
+    },
+    "risk_boundaries": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}, "uniqueItems": true},
+    "data_consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["local_profile", "case_export", "anonymous_research", "confirmed_at"],
+      "properties": {
+        "local_profile": {"type": "boolean"},
+        "case_export": {"type": "boolean"},
+        "anonymous_research": {"type": "boolean"},
+        "confirmed_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "domain": {"type": "object"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"plugin": {"const": "habit-rebuild"}}},
+      "then": {
+        "properties": {
+          "domain": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["target_behavior", "baseline", "common_contexts", "prior_attempts", "current_experiment", "relapse_patterns"],
+            "properties": {
+              "target_behavior": {"type": ["string", "null"], "maxLength": 300},
+              "baseline": {"type": ["string", "null"], "maxLength": 300},
+              "common_contexts": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}},
+              "prior_attempts": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+              "current_experiment": {"type": ["string", "null"], "maxLength": 500},
+              "relapse_patterns": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"plugin": {"const": "parent-learning"}}},
+      "then": {
+        "properties": {
+          "domain": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["child_age_band", "grade_band", "learning_task", "parent_prompt_pattern", "family_rules", "parent_target_behavior", "existing_support"],
+            "properties": {
+              "child_age_band": {"enum": ["under-6", "6-9", "10-12", "13-15", "16-17", "unspecified"]},
+              "grade_band": {"enum": ["preschool", "primary-lower", "primary-upper", "middle", "high", "unspecified"]},
+              "learning_task": {"type": ["string", "null"], "maxLength": 300},
+              "parent_prompt_pattern": {"type": ["string", "null"], "maxLength": 300},
+              "family_rules": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+              "parent_target_behavior": {"type": ["string", "null"], "maxLength": 300},
+              "existing_support": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"plugin": {"const": "conflict-reset"}}},
+      "then": {
+        "properties": {
+          "domain": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["relationship_role", "common_topics", "early_escalation_signals", "pause_preference", "boundary_focus", "safety_constraints"],
+            "properties": {
+              "relationship_role": {"enum": ["partner", "family", "friend", "coworker", "other", "unspecified"]},
+              "common_topics": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}},
+              "early_escalation_signals": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}},
+              "pause_preference": {"type": ["string", "null"], "maxLength": 300},
+              "boundary_focus": {"type": ["string", "null"], "maxLength": 300},
+              "safety_constraints": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 200}}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

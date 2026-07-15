@@ -1,0 +1,42 @@
+name: 专业服务咨询
+description: 咨询机构定制、工作坊、复杂行为系统梳理或本地部署
+title: "[服务咨询] "
+labels: ["service-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请只填写非敏感业务信息。不要提交姓名、联系方式、儿童身份、健康记录、真实聊天或危机细节。
+  - type: dropdown
+    id: service
+    attributes:
+      label: 服务类型
+      options:
+        - Skill / 知识库定制
+        - 团队或机构工作坊
+        - B2 复杂行为系统梳理
+        - Claude Code / Codex 本地部署
+        - 其他合作
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 使用场景
+      description: 只描述组织类型、目标人群范围和希望解决的问题类别。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: 希望的交付物
+      placeholder: 例如：三个内部工作流、一次半天工作坊、一个本地安装包。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我确认本 Issue 不包含个人、儿童、健康或危机敏感信息。
+          required: true

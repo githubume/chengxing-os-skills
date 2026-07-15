@@ -1,0 +1,26 @@
+{
+  "name": "chengxing-os-skills",
+  "interface": {
+    "displayName": "成行 OS Skills"
+  },
+  "plugins": [
+    {
+      "name": "habit-rebuild",
+      "source": {"source": "local", "path": "./plugins/habit-rebuild"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+      "category": "Productivity"
+    },
+    {
+      "name": "parent-learning",
+      "source": {"source": "local", "path": "./plugins/parent-learning"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+      "category": "Productivity"
+    },
+    {
+      "name": "conflict-reset",
+      "source": {"source": "local", "path": "./plugins/conflict-reset"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+      "category": "Productivity"
+    }
+  ]
+}

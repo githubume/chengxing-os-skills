@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# 本地开发控制与评测工作区（不进入首个公开版本）
+/AGENTS.md
+/docs/
+/evals/
+/scripts/build_eval_cases.py
+/scripts/validate_eval_cases.py

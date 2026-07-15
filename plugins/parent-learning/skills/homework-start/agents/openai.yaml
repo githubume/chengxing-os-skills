@@ -1,0 +1,4 @@
+interface:
+  display_name: "作业启动分析"
+  short_description: "分析孩子作业启动链并定位家长、任务与环境中的首要瓶颈"
+  default_prompt: "使用 $homework-start 分析孩子为什么总是迟迟不开始第一题。"

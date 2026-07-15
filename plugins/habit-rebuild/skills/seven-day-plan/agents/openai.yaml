@@ -1,0 +1,4 @@
+interface:
+  display_name: "七天习惯实验"
+  short_description: "围绕一个关键变量设计低负担且可恢复的七天行为实验计划"
+  default_prompt: "使用 $seven-day-plan 为睡前刷手机设计七天最小实验。"

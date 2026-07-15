@@ -1,0 +1,17 @@
+{
+  "name": "chengxing-os-shared",
+  "version": "0.1.0",
+  "description": "Canonical runtime references and schemas for the three Chengxing OS plugins.",
+  "files": [
+    "case-schema/case.schema.json",
+    "case-schema/example.case.json",
+    "core-models/behavior-method.md",
+    "evidence/evidence-policy.md",
+    "profile-schema/example.profile.json",
+    "profile-schema/profile.schema.json",
+    "quality-gates/output-quality.md",
+    "scripts/local_store.py",
+    "safety/privacy-design.md",
+    "safety/routing.md"
+  ]
+}

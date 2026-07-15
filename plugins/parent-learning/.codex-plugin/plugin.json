@@ -1,0 +1,26 @@
+{
+  "name": "parent-learning",
+  "version": "0.1.0",
+  "description": "分析作业启动、家长催促、手机边界和亲子学习循环，生成双主体家庭行为实验。",
+  "author": {
+    "name": "成行 OS"
+  },
+  "homepage": "https://github.com/githubume/chengxing-os-skills",
+  "repository": "https://github.com/githubume/chengxing-os-skills",
+  "license": "Apache-2.0",
+  "keywords": ["parenting", "learning", "家庭学习", "亲子行为"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "亲子学习行为",
+    "shortDescription": "分析作业启动与催促循环，让孩子、家长和环境共同改变。",
+    "longDescription": "用于作业启动、反复催促、手机与学习边界、错题复盘和家庭学习计划。每个方案都包含孩子、家长和环境动作，保护儿童隐私，不以服从或分数作为唯一成功标准。",
+    "developerName": "成行 OS",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "孩子每天写作业都要催很多次，请帮我分析循环。",
+      "设计一个孩子和家长都要改变的七天家庭实验。",
+      "帮我们制定透明、不靠突然没收的手机边界。"
+    ]
+  }
+}

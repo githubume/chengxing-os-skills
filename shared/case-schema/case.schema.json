@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chengxing-os:schema:case:v1",
+  "title": "Chengxing OS local case record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_version",
+    "case_id",
+    "plugin",
+    "quality_level",
+    "route",
+    "status",
+    "consent",
+    "problem_statement",
+    "observations",
+    "unknowns",
+    "hypotheses",
+    "experiment",
+    "follow_ups",
+    "safety",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "case_version": {"const": "1.0"},
+    "case_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{5,63}$"},
+    "plugin": {"enum": ["habit-rebuild", "parent-learning", "conflict-reset"]},
+    "quality_level": {"enum": ["Q0", "Q1", "Q2", "Q3"]},
+    "route": {"enum": ["B1", "B2", "B3"]},
+    "status": {"enum": ["draft", "active", "paused", "completed", "deleted"]},
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["local_save", "export", "anonymous_research", "confirmed_at"],
+      "properties": {
+        "local_save": {"type": "boolean"},
+        "export": {"type": "boolean"},
+        "anonymous_research": {"type": "boolean"},
+        "confirmed_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "problem_statement": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "observations": {"type": "array", "maxItems": 30, "items": {"type": "string", "maxLength": 500}},
+    "unknowns": {"type": "array", "maxItems": 20, "items": {"type": "string", "maxLength": 500}},
+    "hypotheses": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["statement", "confidence", "supporting_observations", "disconfirming_observations", "next_test"],
+        "properties": {
+          "statement": {"type": "string", "maxLength": 500},
+          "confidence": {"enum": ["low", "medium", "high"]},
+          "supporting_observations": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+          "disconfirming_observations": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+          "next_test": {"type": ["string", "null"], "maxLength": 500}
+        }
+      }
+    },
+    "experiment": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["version", "target", "trigger", "action", "environment", "feedback", "responsibilities", "metrics", "recovery", "stop_conditions", "start_date", "end_date"],
+      "properties": {
+        "version": {"type": "integer", "minimum": 1},
+        "target": {"type": "string", "maxLength": 500},
+        "trigger": {"type": "string", "maxLength": 300},
+        "action": {"type": "string", "maxLength": 500},
+        "environment": {"type": "array", "maxItems": 5, "items": {"type": "string", "maxLength": 300}},
+        "feedback": {"type": "string", "maxLength": 300},
+        "responsibilities": {"type": "array", "maxItems": 5, "items": {"type": "string", "maxLength": 300}},
+        "metrics": {"type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 200}, "uniqueItems": true},
+        "recovery": {"type": "string", "maxLength": 500},
+        "stop_conditions": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+        "start_date": {"type": ["string", "null"], "format": "date"},
+        "end_date": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "follow_ups": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["day", "adherence", "behavior_change", "side_effects", "decision", "recorded_at"],
+        "properties": {
+          "day": {"type": "integer", "minimum": 1, "maximum": 365},
+          "adherence": {"type": ["string", "null"], "maxLength": 300},
+          "behavior_change": {"type": ["string", "null"], "maxLength": 300},
+          "side_effects": {"type": "array", "maxItems": 10, "items": {"type": "string", "maxLength": 300}},
+          "decision": {"enum": ["keep", "simplify", "change", "pause", "escalate", "undecided"]},
+          "recorded_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["route_reason", "ordinary_plan_stopped", "professional_review_required"],
+      "properties": {
+        "route_reason": {"type": "string", "maxLength": 500},
+        "ordinary_plan_stopped": {"type": "boolean"},
+        "professional_review_required": {"type": "boolean"}
+      }
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"quality_level": {"const": "Q0"}}},
+      "then": {"properties": {"experiment": {"type": "null"}, "follow_ups": {"maxItems": 0}}}
+    },
+    {
+      "if": {"properties": {"route": {"const": "B3"}}},
+      "then": {
+        "properties": {
+          "experiment": {"type": "null"},
+          "safety": {
+            "properties": {
+              "ordinary_plan_stopped": {"const": true},
+              "professional_review_required": {"const": true}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

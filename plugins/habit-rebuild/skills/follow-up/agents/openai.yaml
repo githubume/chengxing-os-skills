@@ -1,0 +1,4 @@
+interface:
+  display_name: "习惯实验跟踪"
+  short_description: "完整分开复盘执行度、行为变化与副作用并更新下一版实验"
+  default_prompt: "使用 $follow-up 根据我的前三天记录复盘并调整实验。"

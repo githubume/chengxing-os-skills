@@ -1,0 +1,4 @@
+interface:
+  display_name: "边界表达"
+  short_description: "把事实、影响、具体请求和自我保护行动写成清楚且非威胁的边界"
+  default_prompt: "使用 $boundary-expression 帮我表达边界而不是控制对方。"

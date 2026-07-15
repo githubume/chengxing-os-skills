@@ -1,0 +1,26 @@
+{
+  "name": "conflict-reset",
+  "version": "0.1.0",
+  "description": "分析日常冲突、边界和反刍循环，生成安全暂停、修复与七天复位实验。",
+  "author": {
+    "name": "成行 OS"
+  },
+  "homepage": "https://github.com/githubume/chengxing-os-skills",
+  "repository": "https://github.com/githubume/chengxing-os-skills",
+  "license": "Apache-2.0",
+  "keywords": ["conflict", "boundaries", "repair", "冲突复位"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "情绪冲突复位",
+    "shortDescription": "分析冲突循环，设计安全暂停、边界、修复和反刍转行动。",
+    "longDescription": "用于伴侣、家庭、朋友和职场中的重复冲突、升级、冷战、边界与事后反刍。先检查暴力、胁迫、跟踪和权力差异；不安全时停止普通沟通与共同修复路径。",
+    "developerName": "成行 OS",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "我们总在同一件事上争吵，请帮我画出冲突循环。",
+      "给我一句不等于冷战的暂停表达，并说明何时回来谈。",
+      "帮我表达一个由我自己执行、不威胁对方的边界。"
+    ]
+  }
+}

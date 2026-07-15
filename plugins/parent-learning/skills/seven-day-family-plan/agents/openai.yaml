@@ -1,0 +1,4 @@
+interface:
+  display_name: "七天家庭实验"
+  short_description: "让孩子、家长和环境各承担一个动作的七天家庭行为实验"
+  default_prompt: "使用 $seven-day-family-plan 设计一个孩子和家长都要改变的七天计划。"

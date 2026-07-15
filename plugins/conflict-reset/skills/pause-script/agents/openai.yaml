@@ -1,0 +1,4 @@
+interface:
+  display_name: "当场暂停脚本"
+  short_description: "为低风险冲突生成清楚的暂停理由、返回时间与恢复讨论入口"
+  default_prompt: "使用 $pause-script 给我一句不等于冷战的暂停表达。"

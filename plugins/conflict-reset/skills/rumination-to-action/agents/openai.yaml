@@ -1,0 +1,4 @@
+interface:
+  display_name: "反刍转行动"
+  short_description: "区分事实和推测，把冲突后的反复思考转成一个可控低风险动作"
+  default_prompt: "使用 $rumination-to-action 帮我停止重放冲突并做一件可控的事。"

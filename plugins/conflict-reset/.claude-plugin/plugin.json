@@ -1,0 +1,6 @@
+{
+  "name": "conflict-reset",
+  "version": "0.1.0",
+  "description": "分析日常冲突、边界和反刍循环，生成安全暂停、修复与复位实验。",
+  "author": {"name": "成行 OS"}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "冲突案例导出"
+  short_description: "经确认把去标识化的冲突循环、边界和真实跟踪保存为本地案例"
+  default_prompt: "使用 $case-export 导出一份中性冲突摘要，先给我完整预览。"

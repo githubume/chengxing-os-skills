@@ -1,0 +1,48 @@
+{
+  "case_version": "1.0",
+  "case_id": "demo-habit-001",
+  "plugin": "habit-rebuild",
+  "quality_level": "Q2",
+  "route": "B1",
+  "status": "active",
+  "consent": {
+    "local_save": true,
+    "export": false,
+    "anonymous_research": false,
+    "confirmed_at": "2026-07-15T10:00:00+08:00"
+  },
+  "problem_statement": "工作日上床后刷短视频超过四十分钟，希望缩短到十分钟内。",
+  "observations": ["最近七天发生五天", "加班日更容易发生"],
+  "unknowns": ["手机不在卧室时是否仍会延迟睡觉"],
+  "hypotheses": [
+    {
+      "statement": "疲惫时短视频承担快速放松功能。",
+      "confidence": "medium",
+      "supporting_observations": ["加班日更常发生"],
+      "disconfirming_observations": [],
+      "next_test": "比较加班日使用替代放松动作后的刷视频时长。"
+    }
+  ],
+  "experiment": {
+    "version": 1,
+    "target": "上床后不再拿手机，连续试七天。",
+    "trigger": "完成洗漱后",
+    "action": "把手机放在卧室外充电，并播放十分钟离线音频。",
+    "environment": ["充电线移到客厅", "床边放纸质读物"],
+    "feedback": "第二天早晨在纸卡上记录是否完成。",
+    "responsibilities": ["本人完成环境准备和记录"],
+    "metrics": ["上床后手机使用分钟", "完成天数"],
+    "recovery": "若拿回手机，下一条视频结束即放回，不追补或归零。",
+    "stop_conditions": ["出现持续严重失眠或明显日间安全风险时停止普通实验并寻求专业帮助"],
+    "start_date": "2026-07-15",
+    "end_date": "2026-07-21"
+  },
+  "follow_ups": [],
+  "safety": {
+    "route_reason": "当前描述为单一低风险睡前行为，未发现 B3 信号。",
+    "ordinary_plan_stopped": false,
+    "professional_review_required": false
+  },
+  "created_at": "2026-07-15T10:00:00+08:00",
+  "updated_at": "2026-07-15T10:00:00+08:00"
+}

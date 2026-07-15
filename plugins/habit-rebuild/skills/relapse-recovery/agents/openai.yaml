@@ -1,0 +1,4 @@
+interface:
+  display_name: "习惯复发恢复"
+  short_description: "分析习惯复发链并生成二十四小时内可执行的最低恢复动作"
+  default_prompt: "使用 $relapse-recovery 帮我从这次复发中恢复，不要归零。"

@@ -1,0 +1,28 @@
+{
+  "profile_version": "1.0",
+  "plugin": "habit-rebuild",
+  "subject_role": "adult",
+  "age_band": "25-39",
+  "time_budget_minutes": 15,
+  "preferences": {
+    "response_style": "structured",
+    "check_in_days": [3, 7]
+  },
+  "risk_boundaries": [],
+  "data_consent": {
+    "local_profile": true,
+    "case_export": false,
+    "anonymous_research": false,
+    "confirmed_at": "2026-07-15T10:00:00+08:00"
+  },
+  "domain": {
+    "target_behavior": "工作日睡前刷短视频超过四十分钟",
+    "baseline": "最近七天发生五天",
+    "common_contexts": ["上床后", "感到疲惫时"],
+    "prior_attempts": ["设置应用限额，三天后关闭"],
+    "current_experiment": "手机在卧室外充电，先试七天",
+    "relapse_patterns": ["加班后更容易延长使用"]
+  },
+  "created_at": "2026-07-15T10:00:00+08:00",
+  "updated_at": "2026-07-15T10:00:00+08:00"
+}

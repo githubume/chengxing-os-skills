@@ -1,0 +1,4 @@
+interface:
+  display_name: "家庭实验跟踪"
+  short_description: "分别复盘孩子与家长执行度、互动变化和下一版家庭实验"
+  default_prompt: "使用 $follow-up 分别复盘孩子与家长这一周的执行记录。"

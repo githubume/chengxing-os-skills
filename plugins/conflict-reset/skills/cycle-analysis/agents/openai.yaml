@@ -1,0 +1,4 @@
+interface:
+  display_name: "冲突循环分析"
+  short_description: "还原触发、解释、行为、反应和强化循环并寻找最早升级点"
+  default_prompt: "使用 $cycle-analysis 分析我们为什么总在同一件事上升级。"
