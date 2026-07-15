@@ -5,7 +5,7 @@
   "author": {
     "name": "成行 OS"
   },
-  "homepage": "https://github.com/githubume/chengxing-os-skills",
+  "homepage": "https://a-do.top",
   "repository": "https://github.com/githubume/chengxing-os-skills",
   "license": "Apache-2.0",
   "keywords": ["behavior", "habit", "行为实验", "习惯重建"],
@@ -17,6 +17,8 @@
     "developerName": "成行 OS",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://a-do.top",
+    "privacyPolicyURL": "https://a-do.top/privacy",
     "defaultPrompt": [
       "帮我分析这个反复发生的习惯，不要给我贴标签。",
       "为睡前刷手机设计一个七天最小实验。",

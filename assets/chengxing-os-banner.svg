@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">成行 OS Skills</title>
+  <desc id="desc">让高价值行为持续成行</desc>
+  <rect width="1200" height="420" fill="#f7f3e9"/>
+  <path d="M0 336 C230 278 374 375 593 316 C802 260 934 328 1200 250 L1200 420 L0 420 Z" fill="#dfe9df"/>
+  <path d="M0 370 C252 327 410 409 663 354 C872 309 1013 355 1200 314" fill="none" stroke="#2f5d50" stroke-width="2" opacity="0.38"/>
+  <circle cx="95" cy="86" r="28" fill="#b34c3c"/>
+  <path d="M95 58 V114 M67 86 H123" stroke="#f7f3e9" stroke-width="3"/>
+  <text x="150" y="105" font-family="'Noto Serif SC','Songti SC',serif" font-size="56" font-weight="700" fill="#173c35">成行 OS</text>
+  <text x="151" y="148" font-family="'Noto Sans SC','PingFang SC',sans-serif" font-size="22" letter-spacing="5" fill="#5e716b">GROWTH BEHAVIOR SKILLS</text>
+  <text x="82" y="240" font-family="'Noto Serif SC','Songti SC',serif" font-size="46" fill="#173c35">让高价值行为持续成行</text>
+  <text x="84" y="292" font-family="'Noto Sans SC','PingFang SC',sans-serif" font-size="24" fill="#50655f">观察真实场景 · 设计最小行动 · 跟踪变化 · 从失败中恢复</text>
+</svg>

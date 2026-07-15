@@ -5,7 +5,7 @@
   "author": {
     "name": "成行 OS"
   },
-  "homepage": "https://github.com/githubume/chengxing-os-skills",
+  "homepage": "https://a-do.top",
   "repository": "https://github.com/githubume/chengxing-os-skills",
   "license": "Apache-2.0",
   "keywords": ["conflict", "boundaries", "repair", "冲突复位"],
@@ -17,6 +17,8 @@
     "developerName": "成行 OS",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://a-do.top",
+    "privacyPolicyURL": "https://a-do.top/privacy",
     "defaultPrompt": [
       "我们总在同一件事上争吵，请帮我画出冲突循环。",
       "给我一句不等于冷战的暂停表达，并说明何时回来谈。",
