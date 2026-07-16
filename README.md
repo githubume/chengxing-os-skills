@@ -58,6 +58,15 @@
 
 ## 60 秒安装
 
+先确认当前客户端已经提供插件命令：
+
+```bash
+claude plugin --help
+codex plugin --help
+```
+
+如果其中一条命令报错，先更新或修复对应客户端，不要继续安装。
+
 ### Claude Code
 
 ```bash
@@ -67,24 +76,32 @@ claude plugin install parent-learning@chengxing-os-skills
 claude plugin install conflict-reset@chengxing-os-skills
 ```
 
+验证安装：
+
+```bash
+claude plugin list
+```
+
 重新启动 Claude Code，直接用自然语言提问。
 
 ### Codex
 
 ```bash
-git clone https://github.com/githubume/chengxing-os-skills.git
-python3 chengxing-os-skills/scripts/manage_codex_adapters.py install
+codex plugin marketplace add githubume/chengxing-os-skills
+codex plugin add habit-rebuild@chengxing-os-skills
+codex plugin add parent-learning@chengxing-os-skills
+codex plugin add conflict-reset@chengxing-os-skills
 ```
 
-安装后新建一个 Codex 任务。升级或卸载：
+验证安装：
 
 ```bash
-git -C chengxing-os-skills pull
-python3 chengxing-os-skills/scripts/manage_codex_adapters.py upgrade
-python3 chengxing-os-skills/scripts/manage_codex_adapters.py uninstall
+codex plugin list
 ```
 
-卸载不会删除 `~/.chengxing-os` 中的画像或案例；是否删除由用户决定。
+安装后新建一个 Codex 任务。只有在 `codex plugin --help` 不可用的旧环境中，才使用仓库提供的兼容安装器。
+
+升级、卸载、兼容安装及常见错误见[完整安装指南](INSTALL.md)。卸载插件不会自动删除 `~/.chengxing-os` 中的画像或案例；是否删除由用户决定。
 
 ## 第一次使用
 
