@@ -1,6 +1,7 @@
 ---
 name: chengxing-parent
 description: Use when a parent or caregiver needs help with homework start, repeated prompting, family learning routines, phone boundaries, or parent-child learning conflict. This Codex compatibility adapter routes natural-language requests to the independent Chengxing OS parent-learning plugin with child, parent, and environment actions.
+license: Apache-2.0
 ---
 
 <!-- chengxing-os-managed-adapter -->

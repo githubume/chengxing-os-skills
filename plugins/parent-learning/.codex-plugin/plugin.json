@@ -1,6 +1,6 @@
 {
   "name": "parent-learning",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "分析作业启动、家长催促、手机边界和亲子学习循环，生成双主体家庭行为实验。",
   "author": {
     "name": "成行 OS"
@@ -19,6 +19,9 @@
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://a-do.top",
     "privacyPolicyURL": "https://a-do.top/privacy",
+    "brandColor": "#003B42",
+    "composerIcon": "./assets/chengxing-os-app-icon.png",
+    "logo": "./assets/chengxing-os-wordmark.png",
     "defaultPrompt": [
       "孩子每天写作业都要催很多次，请帮我分析循环。",
       "设计一个孩子和家长都要改变的七天家庭实验。",

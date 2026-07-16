@@ -1,6 +1,6 @@
 {
   "name": "conflict-reset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "分析日常冲突、边界和反刍循环，生成安全暂停、修复与七天复位实验。",
   "author": {
     "name": "成行 OS"
@@ -19,6 +19,9 @@
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://a-do.top",
     "privacyPolicyURL": "https://a-do.top/privacy",
+    "brandColor": "#003B42",
+    "composerIcon": "./assets/chengxing-os-app-icon.png",
+    "logo": "./assets/chengxing-os-wordmark.png",
     "defaultPrompt": [
       "我们总在同一件事上争吵，请帮我画出冲突循环。",
       "给我一句不等于冷战的暂停表达，并说明何时回来谈。",
