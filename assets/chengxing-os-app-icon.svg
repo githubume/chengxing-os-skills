@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">成行 OS 应用图标</title>
+  <desc id="desc">深青绿色圆角方形中的成行 OS 竖版标识</desc>
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#003b42"/>
+      <stop offset="1" stop-color="#00535a"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="url(#teal)"/>
+  <text x="132" y="228" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="172" fill="#ffffff">成</text>
+  <text x="230" y="378" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="172" fill="#ffffff">行</text>
+  <g fill="#ffb26e">
+    <rect x="188" y="300" width="34" height="16" rx="2"/>
+    <rect x="222" y="283" width="34" height="16" rx="2"/>
+    <rect x="256" y="266" width="34" height="16" rx="2"/>
+  </g>
+  <text x="307" y="444" font-family="'Times New Roman','Songti SC',serif" font-size="58" fill="#ffffff">OS</text>
+</svg>

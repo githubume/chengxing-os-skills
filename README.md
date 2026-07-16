@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/chengxing-os-banner.svg" alt="成行 OS Skills：让高价值行为持续成行" width="100%" />
+  <img src="assets/chengxing-os-banner.svg" alt="成行 OS：科学引导行为，系统成就改变" width="100%" />
 </p>
 
 <p align="center">

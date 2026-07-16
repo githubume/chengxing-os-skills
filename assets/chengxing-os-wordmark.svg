@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">成行 OS</title>
+  <desc id="desc">成行 OS 横版主标识，科学引导行为，系统成就改变</desc>
+  <g fill="#003b42">
+    <text x="92" y="152" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="142" font-weight="600">成</text>
+    <text x="310" y="152" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="142" font-weight="600">行</text>
+    <g fill="#ff7518">
+      <rect x="265" y="124" width="25" height="12" rx="1.5"/>
+      <rect x="290" y="112" width="25" height="12" rx="1.5"/>
+      <rect x="315" y="100" width="25" height="12" rx="1.5"/>
+    </g>
+    <text x="473" y="152" font-family="'Times New Roman','Songti SC',serif" font-size="48">OS</text>
+    <line x1="92" y1="201" x2="154" y2="201" stroke="#c8c6c0" stroke-width="1.5"/>
+    <text x="178" y="208" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="22" letter-spacing="7">科学引导行为 · 系统成就改变</text>
+    <line x1="576" y1="201" x2="638" y2="201" stroke="#c8c6c0" stroke-width="1.5"/>
+  </g>
+</svg>

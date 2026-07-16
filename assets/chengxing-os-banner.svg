@@ -1,36 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">成行 OS Skills</title>
-  <desc id="desc">成长步进，科学引导行为，系统成就改变</desc>
+  <desc id="desc">科学引导行为，系统成就改变</desc>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fffefd"/>
       <stop offset="1" stop-color="#f6f4ef"/>
     </linearGradient>
     <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#003f46"/>
-      <stop offset="1" stop-color="#00545a"/>
+      <stop offset="0" stop-color="#003b42"/>
+      <stop offset="1" stop-color="#00535a"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#003f46" flood-opacity="0.16"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#003b42" flood-opacity="0.16"/>
     </filter>
   </defs>
   <rect width="1200" height="420" fill="url(#paper)"/>
   <path d="M0 355 C248 321 427 390 680 345 C905 305 1037 337 1200 298 L1200 420 L0 420 Z" fill="#f0eee8"/>
 
-  <g aria-label="成行 OS 品牌标识">
-    <text x="68" y="116" font-family="'Noto Serif SC','Songti SC',serif" font-size="78" font-weight="700" fill="#003f46">成</text>
-    <rect x="164" y="91" width="19" height="9" rx="1" fill="#ff7417"/>
-    <rect x="183" y="81" width="19" height="9" rx="1" fill="#ff7417"/>
-    <rect x="202" y="71" width="19" height="9" rx="1" fill="#ff7417"/>
-    <text x="210" y="116" font-family="'Noto Serif SC','Songti SC',serif" font-size="78" font-weight="700" fill="#003f46">行</text>
-    <text x="309" y="116" font-family="'Noto Serif SC','Songti SC',serif" font-size="30" fill="#003f46">OS</text>
-    <text x="70" y="154" font-family="'Noto Sans SC','PingFang SC',sans-serif" font-size="17" letter-spacing="5" fill="#526164">成长步进 · 科学引导行为 · 系统成就改变</text>
+  <g aria-label="成行 OS 横版标识" fill="#003b42">
+    <text x="68" y="122" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="86" font-weight="600">成</text>
+    <text x="202" y="122" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="86" font-weight="600">行</text>
+    <g fill="#ff7518">
+      <rect x="174" y="104" width="16" height="8" rx="1"/>
+      <rect x="190" y="96" width="16" height="8" rx="1"/>
+      <rect x="206" y="88" width="16" height="8" rx="1"/>
+    </g>
+    <text x="304" y="122" font-family="'Times New Roman','Songti SC',serif" font-size="31">OS</text>
+    <line x1="68" y1="157" x2="112" y2="157" stroke="#c8c6c0"/>
+    <text x="128" y="163" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="17" letter-spacing="5">科学引导行为 · 系统成就改变</text>
+    <line x1="450" y1="157" x2="494" y2="157" stroke="#c8c6c0"/>
   </g>
 
-  <text x="68" y="238" font-family="'Noto Serif SC','Songti SC',serif" font-size="43" font-weight="600" fill="#003f46">把“知道却做不到”</text>
-  <text x="68" y="292" font-family="'Noto Serif SC','Songti SC',serif" font-size="43" font-weight="600" fill="#003f46">变成可持续的成长行为</text>
+  <text x="68" y="246" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="43" font-weight="600" fill="#003b42">把“知道却做不到”</text>
+  <text x="68" y="300" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="43" font-weight="600" fill="#003b42">变成可持续的成长行为</text>
 
-  <g transform="translate(68 336)" font-family="'Noto Sans SC','PingFang SC',sans-serif" font-size="16" fill="#003f46">
+  <g transform="translate(68 336)" font-family="'PingFang SC','Noto Sans SC',sans-serif" font-size="16" fill="#003b42">
     <rect width="126" height="42" rx="21" fill="#ffffff" stroke="#d7d6d1"/>
     <text x="63" y="27" text-anchor="middle">19 年实践</text>
     <rect x="138" width="154" height="42" rx="21" fill="#ffffff" stroke="#d7d6d1"/>
@@ -43,19 +47,21 @@
 
   <g transform="translate(920 52)" filter="url(#shadow)">
     <rect width="210" height="210" rx="44" fill="url(#teal)"/>
-    <text x="50" y="100" font-family="'Noto Serif SC','Songti SC',serif" font-size="66" fill="#ffffff">成</text>
-    <text x="103" y="162" font-family="'Noto Serif SC','Songti SC',serif" font-size="66" fill="#ffffff">行</text>
-    <rect x="78" y="126" width="15" height="7" rx="1" fill="#ff7417"/>
-    <rect x="93" y="118" width="15" height="7" rx="1" fill="#ff7417"/>
-    <rect x="108" y="110" width="15" height="7" rx="1" fill="#ff7417"/>
-    <text x="141" y="188" font-family="'Noto Serif SC','Songti SC',serif" font-size="25" fill="#ffffff">OS</text>
+    <text x="60" y="98" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="68" fill="#ffffff">成</text>
+    <text x="101" y="161" font-family="'Songti SC','STSong','Noto Serif SC',serif" font-size="68" fill="#ffffff">行</text>
+    <g fill="#ffb26e">
+      <rect x="77" y="128" width="15" height="7" rx="1"/>
+      <rect x="92" y="120" width="15" height="7" rx="1"/>
+      <rect x="107" y="112" width="15" height="7" rx="1"/>
+    </g>
+    <text x="135" y="188" font-family="'Times New Roman','Songti SC',serif" font-size="25" fill="#ffffff">OS</text>
   </g>
-  <path d="M742 290 C806 290 836 226 883 192" fill="none" stroke="#ff7417" stroke-width="3" stroke-linecap="round"/>
-  <path d="M870 191 L886 190 L881 205" fill="none" stroke="#ff7417" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M742 290 C806 290 836 226 883 192" fill="none" stroke="#ff7518" stroke-width="3" stroke-linecap="round"/>
+  <path d="M870 191 L886 190 L881 205" fill="none" stroke="#ff7518" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <g transform="translate(742 310)" fill="#ffffff" stroke="#dedcd6">
     <rect x="0" y="42" width="48" height="28"/>
     <rect x="48" y="28" width="48" height="42"/>
     <rect x="96" y="14" width="48" height="56"/>
-    <rect x="144" y="0" width="48" height="70" fill="#ff7417" stroke="#ff7417"/>
+    <rect x="144" y="0" width="48" height="70" fill="#ff7518" stroke="#ff7518"/>
   </g>
 </svg>
