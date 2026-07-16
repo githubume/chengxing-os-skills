@@ -1,6 +1,6 @@
 {
   "name": "habit-rebuild",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "把拖延、刷手机、熬夜流程、运动启动和习惯复发转成可观察、可恢复的行为实验。",
   "author": {
     "name": "成行 OS"
@@ -19,6 +19,9 @@
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://a-do.top",
     "privacyPolicyURL": "https://a-do.top/privacy",
+    "brandColor": "#003B42",
+    "composerIcon": "./assets/chengxing-os-app-icon.png",
+    "logo": "./assets/chengxing-os-wordmark.png",
     "defaultPrompt": [
       "帮我分析这个反复发生的习惯，不要给我贴标签。",
       "为睡前刷手机设计一个七天最小实验。",

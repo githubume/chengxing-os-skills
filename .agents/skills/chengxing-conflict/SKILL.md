@@ -1,6 +1,7 @@
 ---
 name: chengxing-conflict
 description: Use when a user wants to analyze a recurring interpersonal conflict, pause escalation, express a boundary, repair a safe relationship, or turn rumination into action. This Codex compatibility adapter routes requests to the independent Chengxing OS conflict-reset plugin and stops ordinary dialogue in violence, coercion, or stalking scenarios.
+license: Apache-2.0
 ---
 
 <!-- chengxing-os-managed-adapter -->

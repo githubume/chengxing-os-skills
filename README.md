@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/chengxing-os-official-wordmark.svg" alt="成行 OS：科学引导行为，系统成就改变" width="760" />
+  <img src="assets/chengxing-os-official-wordmark.png" alt="成行 OS：科学引导行为，系统成就改变" width="760" />
 </p>
 
 <p align="center">

@@ -1,6 +1,6 @@
 {
   "name": "habit-rebuild",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "把拖延、手机、晚睡和习惯复发转成可观察、可恢复的七天行为实验。",
   "author": {"name": "成行 OS"}
 }

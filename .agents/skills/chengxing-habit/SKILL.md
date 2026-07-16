@@ -1,6 +1,7 @@
 ---
 name: chengxing-habit
 description: Use when an adult wants to change a recurring low-risk personal behavior such as procrastination, bedtime phone use, delayed sleep routines, exercise avoidance, or habit relapse. This Codex compatibility adapter routes natural-language requests to the independent Chengxing OS habit-rebuild plugin and its B1/B2/B3 workflow.
+license: Apache-2.0
 ---
 
 <!-- chengxing-os-managed-adapter -->

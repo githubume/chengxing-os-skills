@@ -1,0 +1,10 @@
+interface:
+  display_name: "成行 OS｜情绪冲突复位"
+  short_description: "分析冲突升级、边界与反刍循环，设计安全暂停和修复行动"
+  icon_small: "./assets/chengxing-os-app-icon.png"
+  icon_large: "./assets/chengxing-os-wordmark.png"
+  brand_color: "#003B42"
+  default_prompt: "使用 $chengxing-conflict 帮我分析重复冲突循环，并生成安全暂停与修复行动。"
+
+policy:
+  allow_implicit_invocation: true
