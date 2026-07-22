@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "plugin": "conflict-reset",
+  "plugin_version": "0.1.1",
+  "website_product_page": {
+    "status": "available",
+    "url": "https://a-do.top/skills/emotion-reset"
+  },
+  "github_source": {
+    "status": "available",
+    "url": "https://github.com/githubume/chengxing-os-skills/tree/main/plugins/conflict-reset"
+  },
+  "feishu_guide": {
+    "status": "blocked",
+    "url": null,
+    "reason": "尚未发布经过权限与公开性验证的飞书说明链接。"
+  },
+  "online_use": {
+    "status": "not_applicable",
+    "url": null,
+    "reason": "本产品只供已使用 Claude Code 或 Codex 的 AI Agent 用户安装，不提供普通网页在线使用。"
+  },
+  "seven_day_entry": {
+    "status": "local_workflow",
+    "url": null,
+    "workflow": "cycle-analysis"
+  },
+  "day3_entry": {
+    "status": "blocked",
+    "url": null,
+    "reason": "真实 D3 表单尚未创建和验收。"
+  },
+  "day7_entry": {
+    "status": "blocked",
+    "url": null,
+    "reason": "真实 D7 表单尚未创建和验收。"
+  }
+}

@@ -15,6 +15,8 @@
 
 成行 OS 是成长行为学与场景行为工程的数字系统。本仓库把长期方法积累做成三个可安装的 AI Skill，支持 Claude Code 和 Codex：不是继续劝人自律，而是帮助用户找到行为发生的真实条件，设计一个足够小的行动，并在第 3、7 天根据结果继续调整。
 
+这些 Skill 只面向已经使用 Claude Code、Codex 等 AI Agent 的用户。普通网站访客通常不需要安装，可直接使用[成行 OS 官网](https://a-do.top)现有的测评、方法和公开资料。
+
 ```text
 模糊困扰 → 可观察行为 → 竞争假设 → 最小实验 → 跟踪变化 → 失败恢复
 ```
@@ -134,6 +136,8 @@ codex plugin list
 - 项目提供教育性和行为设计支持，不替代医疗、心理治疗、危机干预或其他持证专业服务。
 
 详见 [安全边界](SAFETY.md)、[隐私说明](PRIVACY.md) 和 [Apache-2.0 许可证](LICENSE)。成行 OS 名称与视觉标识不随开源许可证授权。
+
+版本状态与发布门禁见 [CHANGELOG](CHANGELOG.md) 和 [Release 流程](RELEASE.md)。
 
 ---
 

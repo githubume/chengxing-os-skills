@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "release_version": "0.1.1",
+  "current_public_tag": "v0.1.0",
+  "release_state": "blocked",
+  "surfaces": {
+    "claude_and_codex_manifests": "ready",
+    "github_source": "ready",
+    "website_product_pages": "ready",
+    "website_version_display": "blocked",
+    "feishu_guides": "blocked",
+    "day3_day7_forms": "blocked",
+    "g8_human_safety_review": "blocked"
+  }
+}
