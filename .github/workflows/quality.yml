@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Check out source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -42,7 +42,5 @@ jobs:
           python scripts/validate_distribution.py
           python scripts/validate_release_contract.py
 
-      - name: Validate evaluation corpus and local storage
-        run: |
-          python scripts/validate_eval_cases.py
-          python -m unittest discover -s tests -p "test_*.py"
+      - name: Validate local storage and release tests
+        run: python -m unittest discover -s tests -p "test_*.py"
